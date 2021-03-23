@@ -26,9 +26,12 @@
         percentage: 0.0
       }
     },
-    method: {
+    mounted() {
+      this.getHateSpeechPercentage();
+    },
+    methods: {
       getHateSpeechPercentage() {
-        const path = '127.0.0.1:5000/books';
+        const path = 'http://127.0.0.1:5000/books';
         axios.get(path)
         .then((res) => {
           this.percentage = res.data.percentage;
