@@ -33,7 +33,7 @@
     </b-card>
 
 
-    <b-button variant="primary" href="#">Update Data</b-button>
+    <b-button variant="primary" @click="getHateSpeechPercentage">Update Data</b-button>
   </b-jumbotron>
 </div>
 </template>
